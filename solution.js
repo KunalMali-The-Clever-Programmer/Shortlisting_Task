@@ -23,7 +23,7 @@ function solution(D) {
     const A = arr[l];
     const B = arr[r];
     const gap = r - l;
-    const step = Math.trunc((B - A) / gap);   // 🔥 FIX
+    const step = Math.trunc((B - A) / gap);  
 
     for (let k = 1; k < gap; k++) {
       arr[l + k] = A + step * k;
